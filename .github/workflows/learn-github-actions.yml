@@ -1,6 +1,6 @@
 name: learn-github-actions # (opcional) O nome do workflow que aparecerá na guia "Actions" do repositório GitHub.
 run-name: ${{ github.actor }} is learning GitHub Actions # (opcional) O nome das execuções de fluxo de trabalho geradas a partir do fluxo de trabalho, que aparecerá na lista de execuções de fluxo de trabalho na guia "Ações" do seu repositório. Este exemplo usa uma expressão com o contexto github para exibir o nome de usuário do ator que acionou a execução do fluxo de trabalho
-on: [push] # (obrigatório) evento que vai disparar o trigger nesse arquivo yml, para executar as ações, nesse caso todo push feito vai ser executado na pipe
+on: ## [push] # (obrigatório) evento que vai disparar o trigger nesse arquivo yml, para executar as ações, nesse caso todo push feito vai ser executado na pipe
 jobs: # (obrigatório) agrupa todos os trabalhos que serão executados em `learn-github-actions`
   check-bats-version: # (obrigatório) define o nome do job
     runs-on: ubuntu-latest # (obrigatório) define em que maquina esse job vai rodar
