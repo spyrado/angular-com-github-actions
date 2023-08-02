@@ -3,8 +3,6 @@ on:
   pull_request:
     types: 
       - opened
-    branches:
-      - 'feature**'
 jobs:
   build-project:
     runs-on: ubuntu-latest
