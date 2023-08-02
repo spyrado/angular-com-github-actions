@@ -3,6 +3,7 @@ on:
   pull_request:
     types: 
       - opened
+      - synchronize
 jobs:
   build-project:
     runs-on: ubuntu-latest
