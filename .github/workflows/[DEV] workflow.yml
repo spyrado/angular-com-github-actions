@@ -1,4 +1,4 @@
-name: [DEV] Workflow
+name: DEV - Workflow
 on:
   pull_request:
    types: [opened]
